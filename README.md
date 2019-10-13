@@ -1,19 +1,19 @@
-# ng-snack
+# ng-snake
 
-A simple game build by angular 8. (https://github.com/plusGo/ng-snack)
+A simple game build by angular 8. (https://github.com/plusGo/ng-snake)
 
 
 
 ## Demo
 
-[Working Demo](https://plusgo.github.io/ng-snack/#/)
+[Working Demo](https://plusgo.github.io/ng-snake/#/)
 
 
 ## Installation
 
 Clone repository
 ```bash
-$ git clone https://github.com/plusGo/ng-snack.git
+$ git clone https://github.com/plusGo/ng-snake.git
 ```
 Using npm:
 
