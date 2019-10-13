@@ -1,0 +1,42 @@
+<div class="snake-wrapper">
+  <mat-card>
+    <div class="game-wrapper">
+      <ng-container *ngFor="let position of map?.positions">
+        <div class="game-grid"
+             [ngClass]="{'snack-head':snack?.isHead(position),'current-food':currentFood?.isSelf(position)
+           ,'snack-body':snack?.isBody(position)}">
+          <span *ngIf="snack?.isHead(position)" class="snack-head-inner"></span>
+        </div>
+      </ng-container>
+    </div>
+  </mat-card>
+  &nbsp;&nbsp;
+  <mat-card style="display: flex;flex-direction: column;justify-content: space-between;width: 180px">
+    <div>
+      <h3>当前得分：{{score}}</h3>
+      <mat-divider></mat-divider>
+    </div>
+
+    <div class="message" >
+      <div style="padding: 8px 0;"> {{recentMessage[0]}}</div>
+    </div>
+    <div>
+      <button (click)="startGame()" *ngIf="gameStatus === 'init'" style="width: 100%" mat-raised-button color="primary">
+        开始游戏
+      </button>
+      <button (click)="reStartGame()" *ngIf="gameStatus === 'end'" style="width: 100%" mat-raised-button
+              color="primary">再来一局
+      </button>
+      <button (click)="stopStartGame()" *ngIf="gameStatus === 'start'" style="width: 100%" mat-raised-button
+              color="primary">暂停游戏
+      </button>
+      <button (click)="continueStartGame()" *ngIf="gameStatus === 'stop'" style="width: 100%" mat-raised-button
+              color="primary">继续游戏
+      </button>
+    </div>
+  </mat-card>
+  <div class="message" style="width: 100%;">
+    <div style="padding: 8px 0;"> 得分规则：小蛇吃掉果实走了最小距离得分10分。多走一步扣一分，最小得分1分。</div>
+    <div style="padding: 8px 0;">得分300分则获得胜利！您将收到500次大佬奖励！</div>
+  </div>
+</div>
