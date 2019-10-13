@@ -27,16 +27,16 @@ Using yarn:
 $ yarn 
 ```
 
-## View
-
+Run
+```bash
+$ ng serve -o
+```
 open your browser: [http:localhost:4200](http:localhost:4200)
 
 
 ## Creator
 
 #### [plusGo](https://github.com/plusGo)
-
-- [@GitHub](https://github.com/plusGo)
 
 ### License
 
