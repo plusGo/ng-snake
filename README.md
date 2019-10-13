@@ -1,6 +1,6 @@
 # ng-snack
 
-A simple game build by angular 8. (https://napster2210.github.io/ngx-spinner/)
+A simple game build by angular 8. (https://github.com/plusGo/ng-snack)
 
 
 
